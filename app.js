@@ -36,7 +36,7 @@ const Wiki = mongoose.model("articles", wikiSchema);
 // ----------------------------
 
 //setting up server
-app.listen(3000, () => console.log(`server started at PORT 3000`));
+app.listen(3000 || process.env.PORT, () => console.log(`server started at PORT 3000`));
 
 // // Articles GET route
 // app.get(`/articles`);
